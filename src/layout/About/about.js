@@ -101,8 +101,6 @@ class About extends Component {
       horizontalActive + 1
     );
 
-    let itemwidth = (window.innerWidth - 250) / 3;
-
 
     const horizontalNav = (
       <div id="horizontal-nav" style={horizontalNavStyle}>

@@ -19,6 +19,10 @@
     /* prevent jump effect when scaling */ }
     .slider a.previousButton:not(.disabled):hover, .slider a.nextButton:not(.disabled):hover {
       transform: translateY(-50%) scale(1.25);
+      -webkit-transition: all 1s ease 0s;
+      -moz-transition: all 1s ease 0s;
+      -ms-transition: all 1s ease 0s;
+      transition: all 1s ease 0s;
       cursor: pointer; }
   .slider a.previousButton {
     left: 20px; }

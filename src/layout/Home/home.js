@@ -40,7 +40,7 @@ class home extends Component {
   render() {
     return (
       <div id="Home">
-        <Slider className="slider-wrapper" autoplay={100} duration={4000}>
+        <Slider className="slider-wrapper" autoplay={3000} >
           {content.map((item, index) => (
             <div
               key={index}

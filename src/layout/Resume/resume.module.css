@@ -1,0 +1,89 @@
+.Resume {
+}
+.Resume h2 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+.Resume h3 {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+  line-height: 1.8em;
+  font-weight: 700;
+}
+.Resume p {
+  margin-bottom: 20px;
+  margin: 0 0 10px;
+  color: #bbbbbb;
+  font-size: 1.2rem;
+}
+.Name_Summary {
+  overflow: hidden;
+  padding: 180px 10%;
+  background-color: rgba(228, 60, 92, 0.8);
+}
+.Name_Summary p {
+  color: white;
+}
+.Image {
+  width: 20%;
+  float: left;
+  margin-right: 40px;
+}
+.Image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+}
+.Summary {
+  width: calc(80% - 40px);
+  float: left;
+  color: white;
+}
+@media (max-width: 767px) {
+  .Image {
+    width: 80%;
+    margin: 5% 10%;
+  }
+  .Summary {
+    width: 100%;
+    text-align: justify;
+  }
+}
+.Summary p {
+  font-family: "Hind", sans-serif;
+  font-size: 1.2rem;
+}
+.NameWrapper {
+  margin-bottom: 30px;
+}
+.NameWrapper h1 {
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0 0 5px;
+
+  font-size: 36px;
+  line-height: 1.8em;
+  font-weight: 700;
+}
+.Personaldetails strong {
+  font-size: 13px;
+  color: #444444;
+  display: block;
+  line-height: 1;
+}
+.Expertise {
+  background-color: white;
+  padding: 90px 10%;
+}
+
+.Skill {
+  background-color: #2a2a2a;
+  padding: 90px 10%;
+}
+.Skill span {
+  color: #bbbbbb;
+}

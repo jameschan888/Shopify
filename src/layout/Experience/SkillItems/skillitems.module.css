@@ -1,0 +1,53 @@
+.Skillitems {
+  width: calc(80%-100px);
+  height: 100%;
+  background: #2a2a2a;
+  padding: 70px 50px 80px 50px;
+}
+.Skillitems h1 {
+  margin-bottom: 0;
+}
+.Header {
+  width: auto;
+  padding: 0 15%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .Header {
+    padding: 0 3%;
+  }
+}
+.Grid {
+  display: flex;
+  overflow: hidden;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 70%;
+  height: auto;
+}
+.Grid::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+.Grid::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-corner {
+  opacity: 0;
+}
+
+/* Handle */
+.Grid::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #555;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Handle on hover */
+.Grid::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

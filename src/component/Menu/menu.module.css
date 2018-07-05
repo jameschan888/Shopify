@@ -1,0 +1,42 @@
+.Menu {
+  height: 85px;
+  width: 80%;
+  padding: 0 10%;
+  /* box-sizing: border-box; */
+  z-index: 90;
+}
+
+.Right nav {
+  height: 100%;
+  display: block;
+  float: right;
+  margin: 0 100px;
+}
+.Center nav {
+  height: 100%;
+  display: block;
+  margin: 0 100px;
+}
+.Logo {
+  float: left;
+}
+/* .Logo {
+  height: 80%;
+} */
+
+@media (max-width: 499px) {
+  .Menu {
+    width: 100%;
+    padding: 0;
+    height: auto;
+  }
+  .DesktopOnly {
+    display: none;
+  }
+  .Right nav {
+    display: none;
+  }
+  .Center nav {
+    display: none;
+  }
+}

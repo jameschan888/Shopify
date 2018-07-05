@@ -15,7 +15,7 @@ const viewresume = props => (
       text="My resume goes over the standard items, but please understand that I don't embellish my capabilities (no good ever comes out of that)."
     />
     <Button
-      onClick={() => {
+      clicked={() => {
         console.log("view resume");
         window.location = "/resume";
         return;

@@ -5,9 +5,9 @@ import { connect } from "react-redux";
 class Menuitem extends Component {
   clickhandler = () => {
     const item = this.props.children;
-    if (item == "Resume") {
+    if (item === "Resume") {
       window.location = "/resume";
-    } else if (item == "About") {
+    } else if (item === "About") {
       window.location = "/about";
     } else {
       window.location = "/#" + this.props.children;

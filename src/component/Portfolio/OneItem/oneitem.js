@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import classes from "./oneitem.module.css";
-import Modal from "../../UI/Modal/Modal";
+
 import { connect } from "react-redux";
 import * as actionTypes from "../../../store/actions";
 class Oneitem extends Component {
@@ -11,10 +11,10 @@ class Oneitem extends Component {
     var plusStyle = {
       fontSize: "4rem"
     };
-    if (this.props.type == "about") {
+    if (this.props.type === "about") {
       img = (
         <div>
-          <img src={this.props.img} className={classes.Image} />
+          <img src={this.props.img} className={classes.Image} alt="" />
           <div
             className={classes.Overlay}
             onClick={() => this.props.showDetailImageView(this.props.img)}
@@ -35,7 +35,7 @@ class Oneitem extends Component {
     } else {
       img = (
         <NavLink to={"/portfolio/" + this.props.index}>
-          <img src={this.props.img} className={classes.Image} />
+          <img src={this.props.img} className={classes.Image} alt="" />
           <div className={classes.Overlay}>
             <p>{this.props.text}</p>
           </div>

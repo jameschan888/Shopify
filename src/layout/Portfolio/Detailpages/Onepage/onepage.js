@@ -1,41 +1,16 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import ImageGallery from "react-image-gallery";
+
 import "react-image-gallery/styles/css/image-gallery.css";
 import classes from "./onepage.module.css";
 import Button from "@material-ui/core/Button";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+
 import { NavLink } from "react-router-dom";
 import LeftArrow from "react-icons/lib/ti/arrow-back";
 import RightArrow from "react-icons/lib/ti/arrow-forward";
 import CancelButton from "react-icons/lib/md/cancel";
-const theme = createMuiTheme({
-  palette: {
-    primary: { main: "#2098D1" }, // Purple and green play nicely together.
-    secondary: { main: "#2098D1" } // This is just green.A700 as hex.
-  }
-});
+
 const baseimgurl = process.env.PUBLIC_URL + "/assets/images/portfolio/";
-const images = [
-  {
-    original: "http://lorempixel.com/1000/600/nature/1/",
-    thumbnail: "http://lorempixel.com/250/150/nature/1/"
-  },
-  {
-    original: "http://lorempixel.com/1000/600/nature/2/",
-    thumbnail: "http://lorempixel.com/250/150/nature/2/"
-  },
-  {
-    original: "http://lorempixel.com/1000/600/nature/3/",
-    thumbnail: "http://lorempixel.com/250/150/nature/3/"
-  },
-  {
-    original: "http://lorempixel.com/1000/600/nature/4/",
-    thumbnail: "http://lorempixel.com/250/150/nature/4/"
-  }
-];
-const PREFIX_URL =
-  "https://raw.githubusercontent.com/xiaolin/react-image-gallery/master/static/";
+
 const portfolios = [
   {
     id: 1,
@@ -136,13 +111,13 @@ class Onepage extends Component {
   prevPortfoliohandler = () => {
     let index = 0 + this.props.match.params.id;
     index--;
-    if (index == 0) index = 9;
+    if (index === 0) index = 9;
     this.props.history.push({ pathname: "/portfolio/" + index });
   };
   nextPortfoliohandler = () => {
     let index = 0 + this.props.match.params.id;
     index++;
-    if (index == 10) index = 1;
+    if (index === 10) index = 1;
     this.props.history.push({ pathname: "/portfolio/" + index });
   };
   visitwebsitehandler = () => {
@@ -263,7 +238,10 @@ class Onepage extends Component {
               <i />
             </div>
             <div className={classes.Image}>
-              <img src={baseimgurl + this.props.match.params.id + ".jpg"} />
+              <img
+                src={baseimgurl + this.props.match.params.id + ".jpg"}
+                alt=""
+              />
             </div>
           </div>
           <h2>About this project</h2>

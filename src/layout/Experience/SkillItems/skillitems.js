@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import classes from "./skillitems.module.css";
 import Skillitem from "./SkillItem/skillitem";
 const baseimgurl = process.env.PUBLIC_URL + "/assets/images/skill/";

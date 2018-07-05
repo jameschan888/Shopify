@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import classes from "./allpage.module.css";
 
 import Portfolio from "../../../component/Portfolio/portfolio";

@@ -12,7 +12,10 @@ const Resume = props => {
       <Header />
       <div className={classes.Name_Summary}>
         <div className={classes.Image}>
-          <img src={process.env.PUBLIC_URL + "/assets/images/avatar.jpg"} />
+          <img
+            src={process.env.PUBLIC_URL + "/assets/images/avatar.jpg"}
+            alt=""
+          />
         </div>
         <div className={classes.Summary}>
           <div className={classes.Namewrapper}>

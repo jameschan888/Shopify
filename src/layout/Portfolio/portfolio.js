@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Aux from "../../hoc/myaux";
-import classes from "./portfolio.module.css";
 import Allpage from "./Allpage/allpage";
 import Detailpages from "./Detailpages/detailpages";
 class Portfolio extends Component {

@@ -8,14 +8,14 @@ import Aux from "../../hoc/myaux";
 import Modal from "../../component/UI/Modal/Modal";
 import { connect } from "react-redux";
 import * as actionTypes from "../../store/actions";
-import Gallery from "react-grid-gallery";
+
 import Leftbutton from "react-icons/lib/fa/arrow-circle-left";
 import Rightbutton from "react-icons/lib/fa/arrow-circle-right";
 import Homebutton from "react-icons/lib/fa/home";
 const baseimgurl = process.env.PUBLIC_URL + "/assets/images/";
 const lists = ["1", "2", "3", "4", "5", "6"];
 const lists1 = ["7", "8", "9", "10", "11", "12"];
-const { changeFullpageSlide, changeHorizontalSlide } = Fullpage;
+const { changeHorizontalSlide } = Fullpage;
 const fullPageOptions = {
   // for mouse/wheel events
   // represents the level of force required to generate a slide change on non-mobile, 0 is default
@@ -31,15 +31,6 @@ const fullPageOptions = {
 
   // optional, set the initial vertical slide
   activeSlide: 0
-};
-const topNavStyle = {
-  textAlign: "center",
-  position: "fixed",
-  width: "100%",
-  cursor: "pointer",
-  zIndex: 10,
-  backgroundColor: "rgba(255, 255, 255, 0.4)",
-  top: "0px"
 };
 
 const horizontalNavStyle = {
@@ -96,13 +87,6 @@ class About extends Component {
     window.location = "/";
   };
   render() {
-    const { active } = this.state;
-
-    const currentActive = active.Fullpage;
-    const prevSlide = changeFullpageSlide.bind(null, currentActive - 1);
-    const nextSlide = changeFullpageSlide.bind(null, currentActive + 1);
-    const goToTop = changeFullpageSlide.bind(null, 0);
-
     const horizontalSliderName = horizontalSliderProps.name;
     const horizontalActive = this.state.active[horizontalSliderName];
 
@@ -117,36 +101,8 @@ class About extends Component {
       horizontalActive + 1
     );
 
-    const imageitem = {
-      src: "1",
-      thumbnail: "1s",
-      thumbnailWidth: 320,
-      thumbnailHeight: 212
-    };
     let itemwidth = (window.innerWidth - 250) / 3;
     console.log("width" + itemwidth);
-    let itemheight = itemwidth * 0.7;
-    const imagelists = lists.map(item => {
-      return {
-        src: baseimgurl + item + ".jpg",
-        thumbnail: baseimgurl + item + ".jpg",
-        thumbnailWidth: itemwidth,
-        thumbnailHeight: itemheight
-      };
-    });
-    const topNav = (
-      <div style={topNavStyle}>
-        <span onClick={prevSlide}>
-          <button>Previous Slide</button>
-        </span>
-        <span onClick={goToTop}>
-          <button>Back to Top</button>
-        </span>
-        <span onClick={nextSlide}>
-          <button>Next Slide</button>
-        </span>
-      </div>
-    );
 
     const horizontalNav = (
       <div id="horizontal-nav" style={horizontalNavStyle}>
@@ -204,14 +160,18 @@ class About extends Component {
       </Slide>
     ];
     fullPageOptions.slides = verticalSlides;
-    const image = baseimgurl + this.props.imagename + ".jpg";
+
     return (
       <Aux>
         <Modal
           show={this.props.show}
           modalClosed={() => this.props.modalcancelhandler(false)}
         >
-          <img src={this.props.imageurl} className={classes.DetailImage} />
+          <img
+            src={this.props.imageurl}
+            className={classes.DetailImage}
+            alt=""
+          />
         </Modal>
         <div className={classes.Homebutton} onClick={this.homeclickhandler}>
           <Homebutton className={classes.Icon} size="40" />

@@ -1,7 +1,6 @@
 import React from "react";
 import classes from "./contact.module.css";
 
-import location from "../../assets/images/map.jpg";
 import Linkedinicon from "react-icons/lib/fa/linkedin-square";
 import Giticon from "react-icons/lib/fa/git-square";
 const baseimgurl = process.env.PUBLIC_URL + "/assets/images/";

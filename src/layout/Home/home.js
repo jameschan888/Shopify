@@ -1,16 +1,8 @@
 import React, { Component } from "react";
-import Menu from "../../component/Menu/menu";
-
-import Aux from "../../hoc/myaux";
-import Homeviewexperience from "./Homeviewexperience/homeviewexperience";
-// import "./horizontal.module.css";
-
-// import "./slider-animations.module.css";
 import Slider from "react-animated-slider";
 
 import "./slider-animations.css";
 import "./horizontal.css";
-import classes from "./home.module.css";
 
 const content = [
   {
@@ -37,11 +29,11 @@ const content = [
 ];
 class home extends Component {
   buttonhandler = type => {
-    if (type == "Resume") {
+    if (type === "Resume") {
       window.location = "/resume";
-    } else if (type == "About Me") {
+    } else if (type === "About Me") {
       window.location = "/about";
-    } else if (type == "Portfolio") {
+    } else if (type === "Portfolio") {
       window.location = "/#Portfolio";
     }
   };

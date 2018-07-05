@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./navigation.module.css";
 import Toggle from "./Toggle/toggle";
 import Menu from "./Menu/menu";
-import { connect } from "react-redux";
+
 import { Component } from "react";
 class Navigation extends Component {
   state = {
@@ -25,8 +25,4 @@ class Navigation extends Component {
   }
 }
 
-const mapStateProps = state => {
-  return { visible: state.menuvisible };
-};
-// export default connect(mapStateProps)(Navigation);
 export default Navigation;

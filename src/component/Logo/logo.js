@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./logo.module.css";
 import logoimg from "../../assets/images/logo.png";
 const logo = props => (
-  <a className={classes.Logo} href="#">
+  <a className={classes.Logo}>
     <img src={logoimg} alt="James Chan" />
     <div className={classes.Logoname}>
       <h1>James Chan</h1>

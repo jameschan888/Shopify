@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import ReactDom from "react-dom";
+import React from "react";
+
 import Header from "../component/Header/header";
 import Home from "./Home/home";
 import Experience from "./Experience/experience";
@@ -17,9 +17,6 @@ class Layout extends React.Component {
     //if (tesNode) window.scrollTo(0, tesNode.offsetTop);
   }
   componentWillUnmount() {}
-  anchorlink = component => {
-    const target = ReactDom.findDOMNode(component);
-  };
 
   render() {
     console.log("render");

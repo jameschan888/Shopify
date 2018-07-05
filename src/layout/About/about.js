@@ -59,7 +59,7 @@ class About extends Component {
   }
 
   onSlideChangeStart(name, props, state, newState) {
-    console.log("start" + state);
+
     if (!this.horizontalNav) {
       this.horizontalNav = document.getElementById("horizontal-nav");
     }
@@ -78,7 +78,7 @@ class About extends Component {
     const sliderState = {
       [name]: newState.activeSlide
     };
-    console.log(newState.activeSlide);
+
     const updatedState = Object.assign(oldActive, sliderState);
     this.setState(updatedState);
   }
@@ -102,7 +102,7 @@ class About extends Component {
     );
 
     let itemwidth = (window.innerWidth - 250) / 3;
-    console.log("width" + itemwidth);
+
 
     const horizontalNav = (
       <div id="horizontal-nav" style={horizontalNavStyle}>
@@ -134,9 +134,7 @@ class About extends Component {
           <Portfolio baseimgurl={baseimgurl} lists={lists1} type="about" />
         </div>
       </Slide>
-      //   <Slide>
-      //     <Viewresume />
-      //   </Slide>
+
     ];
     horizontalSliderProps.slides = horizontalSlides;
 

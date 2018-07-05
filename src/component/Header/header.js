@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import classes from "./header.module.css";
-import logoimg from "../../assets/images/logo.png";
 import Navigation from "../UI/Navigation/navigation";
 
 class Header extends Component {
@@ -40,7 +39,7 @@ class Header extends Component {
             <div className={classes.Logobar}>
               <div className={classes.Logo}>
                 <a href="index-2.html">
-                  <img src={logoimg} alt="" />
+                  <img src={process.env.PUBLIC_URL + "/assets/images/logo.png"} alt="" />
                 </a>
               </div>
             </div>

@@ -18,7 +18,7 @@ const portfolios = [
     url: "https://www.vuhaus.com/",
     description:
       "In this project I acted as part of a small group of misfits hell-bent on making cool stuff. At the time I was working for another react project and was very busy, although this project was so urgent and only 40% of work was done by the other team member. High reusability and productivity of React helped me to complete this project successfully. That was probably the biggest challange for me as it needs a huge development speed with best quality.",
-    tech: ["HTML5", "CSS3", "REACT.JS", "REDUX", "REACT ROUTING V4"]
+    tech: ["HTML5", "CSS3", "REACT.JS", "REDUX", "REACT ROUTING V4", "Node.js"]
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const portfolios = [
     url: "https://versal.com/",
     description:
       "In this project I acted as a UI/UX developer for web version. Versal is a kind of huge LMS project and has a number of complicated and elaborated designs. I had to create many react UI components for it, which was a challege and gave me the chance to test my skill. I made everything run smoothly and perfectly, which was great success.",
-    tech: ["HTML5", "SASS", "REACT.JS", "REDUX-SAGA", "RESPONSIVE WEB DESIGN"]
+    tech: ["HTML5", "SASS", "REACT.JS", "REDUX-SAGA", "RESPONSIVE WEB DESIGN", "Node.js"]
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const portfolios = [
     url: "https://www.kogan.com/",
     description:
       "This website was developed for Kogan Retail in Australia as Lead Front-End Developer at Vinova web company.",
-    tech: ["HTML5", "CSS3", "REACT.JS"]
+    tech: ["HTML5", "CSS3", "REACT.JS","Node.js"]
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const portfolios = [
     url: "http://fabric.qa/",
     description:
       "This project was so interesting. The client asked for a unique and special design which was a great challenge for designers and me as UI/UX developer.",
-    tech: ["HTML5", "CSS Module", "REACT.JS", "UI/UX design"]
+    tech: ["HTML5", "CSS Module", "REACT.JS", "UI/UX design","PHP","Laravel"]
   },
   {
     id: 5,
@@ -50,7 +50,7 @@ const portfolios = [
     url: "https://www.premiumbeat.com/",
     description:
       "In this project I acted as part of a small group of misfits hell-bent on making cool stuff. At the time I was still using BackboneJS for the client side routing, although the views were renderd directly in the Microsoft C# MVC's back-end. The client side javascript was entirely modularized with RequireJS, which is awesome for code maintainance and scalability. That was probably the biggest challange of the project as it has a huge number of different templates, to make everything run smoothly and cohesively was a huge win.",
-    tech: ["HTML5", "CSS3", "REACT.JS"]
+    tech: ["HTML5", "CSS3", "REACT.JS", "PHP","Laravel"]
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ const portfolios = [
     url: "https://chobanifoodservice.com/",
     description:
       "In this project I acted as part of a small group of misfits hell-bent on making cool stuff. At the time I was still using BackboneJS for the client side routing, although the views were renderd directly in the Microsoft C# MVC's back-end. The client side javascript was entirely modularized with RequireJS, which is awesome for code maintainance and scalability. That was probably the biggest challange of the project as it has a huge number of different templates, to make everything run smoothly and cohesively was a huge win.",
-    tech: ["HTML5", "CSS3", "REACT.JS"]
+    tech: ["HTML5", "CSS3", "REACT.JS","Node.js"]
   },
   {
     id: 7,
@@ -66,7 +66,7 @@ const portfolios = [
     url: "http://www.eatingwell.com/",
     description:
       "In this project I played a role as frontend developer. This website has huge number of UIs to build, but I did everything well in time.",
-    tech: ["CSS3", "VUE.JS"]
+    tech: ["CSS3", "VUE.JS","PHP","Laravel"]
   },
   {
     id: 8,
@@ -74,7 +74,7 @@ const portfolios = [
     url: "http://en.paris-maison-armance.com/",
     description:
       "This project was simple, but required a luxury design. I could have done that with Angular in a short period. ",
-    tech: ["CSS3", "ANGULAR 4", "RESPONSIVE"]
+    tech: ["CSS3", "ANGULAR 4", "RESPONSIVE","PHP","Laravel"]
   },
   {
     id: 9,

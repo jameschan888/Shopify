@@ -37,7 +37,10 @@ class Oneitem extends Component {
         <NavLink to={"/portfolio/" + this.props.index}>
           <img src={this.props.img} className={classes.Image} alt="" />
           <div className={classes.Overlay}>
+          <div classaName={classes.Overlaytext}>
             <p>{this.props.text}</p>
+            <h3 className={classes.Skilltext}>{this.props.skills}</h3>
+            </div>
           </div>
         </NavLink>
       );

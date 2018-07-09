@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./allpage.module.css";
 
 import Portfolio from "../../../component/Portfolio/portfolio";
+import {portfolios} from "../Detailpages/Onepage/onepage";
 const baseimgurl = process.env.PUBLIC_URL + "/assets/images/portfolio/";
 const items = ["1s", "2s", "3s", "4s", "5s", "6s", "7s", "8s", "9s"];
 const texts = [
@@ -28,8 +29,7 @@ const Allpage = props => {
       <Portfolio
         baseimgurl={baseimgurl}
         lists={items}
-        text={texts}
-        type="portfolio"
+        portfolios={portfolios}
       />
     </div>
   );

@@ -11,7 +11,7 @@ import CancelButton from "react-icons/lib/md/cancel";
 
 const baseimgurl = process.env.PUBLIC_URL + "/assets/images/portfolio/";
 
-const portfolios = [
+export const portfolios = [
   {
     id: 1,
     name: "VUEHAUS",

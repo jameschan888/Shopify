@@ -15,7 +15,7 @@ const content = [
   {
     title: "Front & Backend Developer",
     description:
-      "React, Angular, Vue.js, PHP as frontend and Node.js, ASP.Net, Python as BackEnd.",
+      "React, Angular, Vue.js as frontend and Node.js, Laravel, ASP.Net as BackEnd.",
     button: "Resume",
     image: "https://i.imgur.com/ZXBtVw7.jpg"
   },
